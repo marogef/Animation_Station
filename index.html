@@ -7,24 +7,32 @@
 	<link href="main.css" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="app.js" type="text/javascript"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $(".main-content img").click(function(){
+    $(".main-content img").animate({
+      opacity: '0.5',
+      height: '500px',
+      width: '450px'
+    });
+  });
+});
+</script>
 </head>
 <body>
-<!--navigation-->
-<nav class="side pole">
-  <div class="navigation">
-    <ul></ul>
-  </div>
-</nav>
-
 <!--    classes-->
     <section class="main-content">
+        <img src="girl.jpg" alt="Girl">
+
      <p>
     In this section, we will talk about many things including the new proposal from the United States president in which he discusses the topics which relate to American businesses.      
     </p>
     </section>
     
 <section class="sub-content">
+    <img src="house.jpg" alt="house">
+
  <p>All small businesses deserve a second chance.  That's why the Sentate proposed a resolution to give stimulus packages not only to the small business but to families as well.</p>
 </section>		
 </body>
